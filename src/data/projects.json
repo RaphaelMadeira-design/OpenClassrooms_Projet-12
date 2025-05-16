@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Oh My Food",
+        "image": "/picture-lake.jpg",
+        "description": "Développement du site responsive en mobile first et ajout d'animations.",
+        "tags": [
+            { "name": "HTML", "color": "#E34C26" },
+            { "name": "CSS", "color": "#1572B6" },
+            { "name": "JavaScript", "color": "#F7DF1E" }
+        ],
+        "link" : "https://github.com/RaphaelMadeira-design/OpenClassrooms_Projet-4"
+    },
+    {
+        "title": "Kasa",
+        "image": "https://via.placeholder.com/300x200",
+        "description": "Refonte totale du site pour passer à React côté frontend.",
+        "tags": [
+            { "name": "React", "color": "#61DAFB" },
+            { "name": "CSS", "color": "#1572B6" }
+        ],
+        "link": "https://github.com/RaphaelMadeira-design/OpenClassrooms_Projet-7"
+    },
+    {
+        "title": "Nina Carducci",
+        "image": "/picture-lake.jpg",
+        "description": "Optimisation complète du site au niveau des performances, accessibilité et SEO.",
+        "tags": [
+            { "name": "HTML", "color": "#E34C26" },
+            { "name": "CSS", "color": "#1572B6" },
+            { "name": "JavaScript", "color": "#F7DF1E" }
+        ],
+        "link" : "https://github.com/RaphaelMadeira-design/OpenClassrooms_Projet-8"
+    },
+    {
+        "title": "724 Events",
+        "image": "https://via.placeholder.com/300x200",
+        "description": "Optimisation et débuggage complet du site.",
+        "tags": [
+            { "name": "React", "color": "#61DAFB" },
+            { "name": "CSS", "color": "#1572B6" }
+        ],
+        "link" : "https://github.com/RaphaelMadeira-design/OpenClassrooms_Projet-9"
+    }
+]

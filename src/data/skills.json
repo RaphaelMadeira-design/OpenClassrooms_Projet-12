@@ -1,0 +1,20 @@
+{
+    "langages": [
+        { "name": "HTML5", "icon": "/icons/html.svg" },
+        { "name": "CSS3", "icon": "/icons/css.svg" },
+        { "name": "JavaScript", "icon": "/icons/javascript.svg" },
+        { "name": "TypeScript", "icon": "/icons/typescript.svg" }
+    ],
+    "frameworks": [
+        { "name": "React", "icon": "/icons/react.svg" },
+        { "name": "Redux", "icon": "/icons/redux.svg" },
+        { "name": "TailwindCSS", "icon": "/icons/tailwind.svg" },
+        { "name": "Bootstrap", "icon": "/icons/bootstrap.svg" }
+    ],
+    "outils": [
+        { "name": "Github", "icon": "/icons/git.svg" },
+        { "name": "Figma", "icon": "/icons/figma.svg" },
+        { "name": "VS Code", "icon": "/icons/vscode.svg" },
+        { "name": "Vite", "icon": "/icons/vite.svg" }
+    ]
+}

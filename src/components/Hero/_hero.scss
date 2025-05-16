@@ -1,0 +1,124 @@
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    &-greeting {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+            font-size: 200px;
+            font-weight: 500;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            font-family: "Cal Sans", sans-serif;
+            pointer-events: none;
+            line-height: 200px;
+            &.fade-in {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            &.fade-out {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+        }
+        h2 {
+            font-size: 2vw;
+            font-weight: 500;
+            line-height: 50px;
+            .animated-text {
+                display: inline-flex;
+                margin-left: 10px;
+                transition: color 500ms ease;    
+                font-weight: 800;   
+            }
+        }
+    }
+    &-scroll {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        color: #fff;
+        transition: all 400ms ease-in-out;
+        &:hover {
+            animation: bounce 500ms alternate infinite;
+            color: #b54343;
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .hero {
+        &-greeting {
+            h1 {
+                font-size: 150px;
+                line-height: 150px;
+            }
+            h2 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        &-picture {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 75px;
+        &-greeting {
+            h1 {
+                font-size: 118px;
+                line-height: 125px;
+            }
+            h2 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        &-picture {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        &-greeting {
+            h1 {
+                font-size: 88px;
+                line-height: 80px;
+            }
+            h2 {
+                margin-top: 25px;
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        &-picture {
+            display: none;
+        }
+    }
+}
