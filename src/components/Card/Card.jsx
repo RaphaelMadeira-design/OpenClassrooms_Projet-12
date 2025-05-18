@@ -35,7 +35,6 @@ function Card({ title, image, github, link, description, color = "#242424", tags
     return (
         <div ref={containerRef} className="gooey-container">
             <div className="card">
-                <div className="card-gradient"></div>
                 <div className="card-content">
                     <div className="card-content--top">
                         <div className="card-content--top__text">

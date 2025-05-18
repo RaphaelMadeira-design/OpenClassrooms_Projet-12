@@ -67,7 +67,7 @@
             "card-content--top"
             "card-content--bottom"; 
         &--top {
-            display: grid; 
+            display: grid;
             grid-template-columns: 1fr 1fr; 
             grid-template-rows: 1fr; 
             gap: 0px 25px; 
@@ -181,12 +181,14 @@
     }
     .card {
         &-content {
-            grid-template-columns: 1fr; 
+            grid-template-columns: 1fr;
+            padding: 10px 0;
             gap: 25px 10px; 
             grid-template-areas: 
                 "card-content--top"
                 "card-content--bottom"; 
             &--top {
+                display: flex;
                 align-items: center;
                 justify-items: center;
                 text-align: center;
@@ -213,10 +215,16 @@
                 grid-template-areas: 
                     "card-content--bottom__tags" 
                     "card-content--bottom__button"; 
-                grid-area: card-content--bottom; 
-                &__button {
-                    width: 70%;
-                }
+                grid-area: card-content--bottom;
+                &__links {
+                    &-button {
+                        width: 48%;
+                        gap: 8px;
+                        padding: 5px 15px;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                } 
             }
         }
     }
