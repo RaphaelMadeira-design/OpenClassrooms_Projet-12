@@ -113,7 +113,7 @@
                 display: flex;
                 justify-content: space-between;
                 &-button {
-                    width: 45%;
+                    width: 47%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -126,17 +126,16 @@
                     border: none;
                     border-radius: 25px;
                     cursor: pointer;
-                    text-transform: uppercase;
                     font-weight: bold;
                     transition: background-color 0.3s ease, transform 0.2s ease;
-                    border: 1px solid gray;
+                    border: 2px solid #4e4e4e;
                     grid-area: card-content--bottom__button;
                     & i {
-                        font-size: 16px;
+                        font-size: 18px;
                     }
                     &:hover {
                         background-color: #121212;
-                        border: 1px solid rgb(211, 211, 211);
+                        border: 2px solid #ccaa3b;
                     }
                     &:active {
                         transform: translateY(0);
