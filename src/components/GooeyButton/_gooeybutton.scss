@@ -15,7 +15,6 @@
     transition: all --a 500ms ease-in-out;
     isolation: isolate;
     cursor: pointer;
-    margin-left: -25px;
     &:hover {
         --a: 100%;
         transition-duration: 0.5s, 1s;

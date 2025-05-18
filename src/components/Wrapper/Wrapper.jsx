@@ -4,15 +4,15 @@ import "./_wrapper.scss"
 
 const Wrapper = ({ children }) => {
     const pageVariants = {
-        initial: { y: "100vh", opacity: 0 },
-        animate: { y: 0, opacity: 1 },
-        exit: { y: "100vh", opacity: 0 },
+        initial: { x: "100vw", opacity: 0 },
+        animate: { x: 0, opacity: 1 },
+        exit: { x: "-100vw", opacity: 0 },
     }
 
     const pageTransition = {
         type: "tween",
         ease: "easeInOut",
-        duration: 0.4,
+        duration: 0.3,
     }
 
     return (

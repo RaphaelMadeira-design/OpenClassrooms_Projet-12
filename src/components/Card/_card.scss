@@ -70,7 +70,7 @@
             display: grid; 
             grid-template-columns: 1fr 1fr; 
             grid-template-rows: 1fr; 
-            gap: 0px 0px; 
+            gap: 0px 25px; 
             grid-template-areas: 
                 "card-content--top__text card-content--top__thumbnail"; 
             grid-area: card-content--top;
@@ -82,20 +82,22 @@
                 grid-template-areas: 
                     "card-content--top__text-title"
                     "card-content--top__text-description"; 
-                grid-area: card-content--top__text; 
+                grid-area: card-content--top__text;
                 &-title {
-                    font-size: 28px;
+                    font-size: 26px;
                     grid-area: card-content--top__text-title; 
                 }
                 &-description {
-                    font-size: 16px;
+                    font-size: 15px;
+                    font-style: italic;
+                    color :#838383;
                     grid-area: card-content--top__text-description;
                 }
             }
             &__thumbnail {
-                background-size: cover;
+                background-size: contain;
+                background-repeat: no-repeat;
                 background-position: center;
-                border-radius: 15px;
                 grid-area: card-content--top__thumbnail; 
             }
         }
@@ -107,30 +109,38 @@
             grid-template-areas: 
                 "card-content--bottom__button card-content--bottom__tags"; 
             grid-area: card-content--bottom; 
-            &__button {
-                width: 50%;
+            &__links {
                 display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                padding: 7px 15px;
-                font-size: 1rem;
-                color: white;
-                background-color: transparent;
-                border: none;
-                border-radius: 25px;
-                cursor: pointer;
-                text-transform: uppercase;
-                font-weight: bold;
-                transition: background-color 0.3s ease, transform 0.2s ease;
-                border: 1px solid gray;
-                 grid-area: card-content--bottom__button;
-                &:hover {
-                    background-color: #121212;
-                    border: 1px solid rgb(211, 211, 211);
-                }
-                &:active {
-                    transform: translateY(0);
+                justify-content: space-between;
+                &-button {
+                    width: 45%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    gap: 10px;
+                    padding: 5px 20px;
+                    font-size: 16px;
+                    color: white;
+                    background-color: transparent;
+                    border: none;
+                    border-radius: 25px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    transition: background-color 0.3s ease, transform 0.2s ease;
+                    border: 1px solid gray;
+                    grid-area: card-content--bottom__button;
+                    & i {
+                        font-size: 16px;
+                    }
+                    &:hover {
+                        background-color: #121212;
+                        border: 1px solid rgb(211, 211, 211);
+                    }
+                    &:active {
+                        transform: translateY(0);
+                    }
                 }
             }
             &__tags {
@@ -139,10 +149,9 @@
                 align-items: center;
                 gap: 5px;
                 grid-area: card-content--bottom__tags;
-
                 &-tag {
                     display: inline-block;
-                    color: #fff;
+                    color: #000000;
                     font-size: 12px;
                     padding: 5px 10px;
                     border-radius: 15px;

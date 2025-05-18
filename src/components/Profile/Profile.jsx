@@ -16,7 +16,9 @@ const Profile = () => {
                 <p className="profile-paragraph">
                     C'est donc tout naturellement que mes projets sont centrés sur l'utilisateur et j'ai à cœur de rendre le web plus inclusif afin que tout le monde puisse y naviguer le plus confortablement possible.
                 </p>
-                <GooeyButton text="Voir mon CV" color="#3882ba" href="/path/to/cv.pdf"/>
+                <div className="profile-button">
+                    <GooeyButton text="Voir mon CV" color="#3882ba" href="/RaphaelMadeira_CV.pdf"/>
+                </div>
             </div>
             <div className="profile-right">
                 <img src="/illus/profile.svg" alt="Illustration représentant Raphaël Madeira, pointant le texte de présentation" className="profile-image"/>

@@ -9,7 +9,7 @@ const hexToRgb = (hex) => {
     return `${r}, ${g}, ${b}`
 }
 
-function Card({ title, image, link, description, color = "#242424", tags  = [] }) {
+function Card({ title, image, github, link, description, color = "#242424", tags  = [] }) {
     const containerRef = useRef(null)
 
     useEffect(() => {
@@ -45,9 +45,14 @@ function Card({ title, image, link, description, color = "#242424", tags  = [] }
                         <div className="card-content--top__thumbnail" style={{ backgroundImage: `url(${image})` }}></div>
                     </div>
                     <div className="card-content--bottom">
-                        <a href={link} target="_blank" rel="noopener noreferrer" className="card-content--bottom__button">
-                            Lien GitHub
-                        </a>
+                        <div className="card-content--bottom__links">
+                            <a href={github} target="_blank" rel="noopener noreferrer" className="card-content--bottom__links-button">
+                                <i class="fa-brands fa-github"></i>Repo
+                            </a>
+                            <a href={link} target="_blank" rel="noopener noreferrer" className="card-content--bottom__links-button">
+                                <i class="fa-solid fa-globe"></i>Lien
+                            </a>
+                        </div>
                         <div className="card-content--bottom__tags">
                             {tags.map((tag, index) => (
                                 <div key={index} className="card-content--bottom__tags-tag" style={{ backgroundColor: tag.color }}>

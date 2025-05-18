@@ -1,44 +1,48 @@
 [
     {
-        "title": "Oh My Food",
-        "image": "/picture-lake.jpg",
-        "description": "Développement du site responsive en mobile first et ajout d'animations.",
+        "title": "Booki",
+        "image": "/works/booki.webp",
+        "description": "Développement frontend du site responsive desktop, tablette et mobile.",
         "tags": [
             { "name": "HTML", "color": "#E34C26" },
-            { "name": "CSS", "color": "#1572B6" },
-            { "name": "JavaScript", "color": "#F7DF1E" }
+            { "name": "CSS", "color": "#3f98d9" }
         ],
-        "link" : "https://github.com/RaphaelMadeira-design/OpenClassrooms_Projet-4"
+        "github" : "https://github.com/RaphaelMadeira-design/OpenClassrooms_Projet-3",
+        "link" : "https://raphaelmadeira-design.github.io/OpenClassrooms_Projet-3/"
+    },
+    {
+        "title": "Oh My Food",
+        "image": "/works/ohmyfood.webp",
+        "description": "Développement frontend du site responsive en mobile first et ajout d'animations.",
+        "tags": [
+            { "name": "HTML", "color": "#E34C26" },
+            { "name": "SCSS", "color": "#ee4f87" }
+        ],
+        "github" : "https://github.com/RaphaelMadeira-design/OpenClassrooms_Projet-4",
+        "link" : "https://raphaelmadeira-design.github.io/OpenClassrooms_Projet-4/"
     },
     {
         "title": "Kasa",
-        "image": "https://via.placeholder.com/300x200",
-        "description": "Refonte totale du site pour passer à React côté frontend.",
+        "image": "/works/kasa.webp",
+        "description": "Refonte complète du site avec une migration vers React pour le frontend avec design responsive.",
         "tags": [
-            { "name": "React", "color": "#61DAFB" },
-            { "name": "CSS", "color": "#1572B6" }
+            { "name": "React", "color": "#74d4ee" },
+            { "name": "HTML", "color": "#E34C26" },
+            { "name": "SCSS", "color": "#ee4f87" }
         ],
-        "link": "https://github.com/RaphaelMadeira-design/OpenClassrooms_Projet-7"
+        "github": "https://github.com/RaphaelMadeira-design/OpenClassrooms_Projet-7",
+        "link" : "https://open-classrooms-kasa.vercel.app/"
     },
     {
         "title": "Nina Carducci",
-        "image": "/picture-lake.jpg",
+        "image": "/works/nina.webp",
         "description": "Optimisation complète du site au niveau des performances, accessibilité et SEO.",
         "tags": [
             { "name": "HTML", "color": "#E34C26" },
-            { "name": "CSS", "color": "#1572B6" },
+            { "name": "CSS", "color": "#3f98d9" },
             { "name": "JavaScript", "color": "#F7DF1E" }
         ],
-        "link" : "https://github.com/RaphaelMadeira-design/OpenClassrooms_Projet-8"
-    },
-    {
-        "title": "724 Events",
-        "image": "https://via.placeholder.com/300x200",
-        "description": "Optimisation et débuggage complet du site.",
-        "tags": [
-            { "name": "React", "color": "#61DAFB" },
-            { "name": "CSS", "color": "#1572B6" }
-        ],
-        "link" : "https://github.com/RaphaelMadeira-design/OpenClassrooms_Projet-9"
+        "github" : "https://github.com/RaphaelMadeira-design/OpenClassrooms_Projet-8",
+        "link" : "https://raphaelmadeira-design.github.io/OpenClassrooms_Projet-8/"
     }
 ]

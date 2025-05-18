@@ -18,7 +18,7 @@ function App() {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
-        }, 4000)
+        }, 3000)
     }, [])
 
     return (

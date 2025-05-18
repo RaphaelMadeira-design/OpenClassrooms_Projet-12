@@ -8,7 +8,7 @@ const PageAnimation = ({ children }) => {
     }
 
     const fadeTransition = {
-        duration: 0.8,
+        duration: 0.4,
         ease: "easeInOut",
     }
 

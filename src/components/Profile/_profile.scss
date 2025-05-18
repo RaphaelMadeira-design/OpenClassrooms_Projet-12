@@ -24,6 +24,12 @@
         color: #ebebeb;
         text-align: justify;
     }
+    &-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -25px;
+    }
     &-right {
         display: flex;
         justify-content: center;
@@ -39,10 +45,10 @@
     .profile {
         grid-template-columns: 1.5fr 1fr;
         &-title {
-            font-size: 2.5rem;
+            font-size: 42px;
         }
         &-paragraph {
-            font-size: 1.1rem;
+            font-size: 18px;
         }
     }
 }
@@ -54,6 +60,9 @@
         &-left {
             padding: 55px 0;
         }
+        &-button {
+            align-self: center;
+        }
         &-right {
             display: none;
         }
@@ -63,10 +72,10 @@
 @media screen and (max-width: 768px) {
     .profile {
         &-title {
-            font-size: 2.5rem;
+            font-size: 38px;
         }
         &-paragraph {
-            font-size: 1.1rem;
+            font-size: 16px;
         }
     }
 }

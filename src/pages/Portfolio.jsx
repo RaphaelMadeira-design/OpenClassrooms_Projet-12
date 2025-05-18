@@ -45,7 +45,7 @@ function Portfolio() {
                 <Wrapper>
                     <div className="card-container">
                         {projects.map((project, index) => (
-                            <Card key={index} title={project.title} description={project.description} link={project.link} image={project.image} tags={project.tags}/>
+                            <Card key={index} title={project.title} description={project.description} github={project.github} link={project.link} image={project.image} tags={project.tags}/>
                         ))}
                     </div>
                     <Footer />
