@@ -47,10 +47,10 @@ function Card({ title, image, github, link, description, color = "#242424", tags
                     <div className="card-content--bottom">
                         <div className="card-content--bottom__links">
                             <a href={github} target="_blank" rel="noopener noreferrer" className="card-content--bottom__links-button">
-                                <i class="fa-brands fa-github"></i>GitHub
+                                <i className="fa-brands fa-github"></i>GitHub
                             </a>
                             <a href={link} target="_blank" rel="noopener noreferrer" className="card-content--bottom__links-button">
-                                <i class="fa-solid fa-globe"></i>Website
+                                <i className="fa-solid fa-globe"></i>Website
                             </a>
                         </div>
                         <div className="card-content--bottom__tags">
