@@ -1,17 +1,17 @@
 import { useEffect, useRef } from 'react'
 
 const Blob = ({
-    top = '0px',
-    left = '0px',
-    color,
-    radius = 300,
-    image,
-    outsideImage, // Image pour l'extérieur du blob
-    imageScale = 1,
-    imageOffset = { x: 0, y: 0 },
-    outsideImageOffset = { x: 0, y: 0 },
-}) => {
-    const canvasRef = useRef(null)
+        top = '0px',
+        left = '0px',
+        color,
+        radius = 300,
+        image,
+        outsideImage,
+        imageScale = 1,
+        imageOffset = { x: 0, y: 0 },
+        outsideImageOffset = { x: 0, y: 0 },
+    }) => {
+        const canvasRef = useRef(null)
 
     useEffect(() => {
         class BlobEffect {
@@ -68,7 +68,7 @@ const Blob = ({
                         baseX: x,
                         baseY: y,
                         angle,
-                        speed: this._speed, // Fixer la vitesse pour tous les points
+                        speed: this._speed,
                         offset: Math.random() * Math.PI * 2,
                     })
                 }
@@ -174,7 +174,7 @@ const Blob = ({
                 canvas,
                 radius: adjustedRadius,
                 numPoints: 18,
-                speed: 0.01, // Applique une vitesse uniforme à tous les blobs
+                speed: 0.01,
                 color,
                 image,
                 outsideImage,
