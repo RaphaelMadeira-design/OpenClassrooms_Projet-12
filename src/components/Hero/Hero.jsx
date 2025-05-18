@@ -22,9 +22,10 @@ const Hero = () => {
     }, [])
 
     useEffect(() => {
+        let index = 0
         const colorInterval = setInterval(() => {
-            const randomColor = colors[Math.floor(Math.random() * colors.length)]
-            setTextColor(randomColor)
+            index = (index + 1) % colors.length
+            setTextColor(colors[index])
         }, 3000)
         return () => clearInterval(colorInterval)
     }, [])

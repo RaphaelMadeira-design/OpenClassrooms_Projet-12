@@ -38,19 +38,15 @@ function AnimatedRoutes() {
     return (
         <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
-                <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
-                <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
-                <Route path="/skills" element={<PageWrapper><Skills /></PageWrapper>} />
-                <Route path="/portfolio" element={<PageWrapper><Portfolio /></PageWrapper>} />
-                <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
-                <Route path="*" element={<PageWrapper><Error /></PageWrapper>} />
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/skills" element={<Skills />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="*" element={<Error />} />
             </Routes>
         </AnimatePresence>
     )
-}
-
-function PageWrapper({ children }) {
-    return children
 }
 
 export default App
