@@ -1,4 +1,3 @@
-import React from "react"
 import "./_profile.scss"
 import GooeyButton from "../GooeyButton/GooeyButton"
 

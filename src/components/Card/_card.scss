@@ -4,14 +4,12 @@
     --y: 50;
     --container: #242424;
     --container-rgb: transparent;
-    --edge: 20px;
     --font-size: 22px;
     background: transparent;
     color: #fafafa;
     font-size: var(--font-size);
     position: relative;
     padding: 0;
-    animation: color 20s linear infinite both;
     transition: all --a 500ms ease-in-out;
     isolation: isolate;
     &:hover {
@@ -24,14 +22,10 @@
         content: "";
         position: absolute;
         inset: 0;
-        filter: blur(12px) url(#goo);
+        filter: blur(15px) url(#goo);
         background-image: 
             linear-gradient(0deg, var(--container), var(--container)),
-            radial-gradient(
-                40% 70% at calc(var(--x) * 1%) calc(var(--y) * 1%),
-                rgba(var(--container-rgb), var(--a)) 0%,
-                transparent 90%
-            );
+            radial-gradient(40% 70% at calc(var(--x) * 1%) calc(var(--y) * 1%), rgba(var(--container-rgb), var(--a)) 0%, transparent 90%);
         background-clip: content-box, border-box;
         padding: 24px;
         z-index: -1;
