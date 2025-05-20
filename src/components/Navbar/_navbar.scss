@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 75px;
-    color: #dfdfdf;
+    color: #ffffff;
     transition: all 500ms ease-in-out;
     z-index: 9;
     &-hamburger {
@@ -21,7 +21,7 @@
             font-family: "Cal Sans", sans-serif;
             color: #dfdfdf;
             padding: 5px 15px;
-            z-index: 2;
+            z-index: 10;
             transition: color 300ms ease;
             &.active {
                 font-weight: 500;
@@ -32,7 +32,7 @@
             position: absolute;
             height: 40px;
             border-radius: 20px;
-            z-index: 2;
+            z-index: 1;
             pointer-events: none;
             transition: background-color 200ms ease;
             filter: url('#goo');

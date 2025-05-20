@@ -1,20 +1,20 @@
 {
     "langages": [
-        { "name": "HTML5", "icon": "/icons/html.svg" },
-        { "name": "CSS3", "icon": "/icons/css.svg" },
-        { "name": "JavaScript", "icon": "/icons/javascript.svg" },
-        { "name": "TypeScript", "icon": "/icons/typescript.svg" }
+        { "name": "HTML5", "icon": "/icons/html.svg", "alt" : "Icone HTML5" },
+        { "name": "CSS3", "icon": "/icons/css.svg", "alt" : "Icone CSS3" },
+        { "name": "JavaScript", "icon": "/icons/javascript.svg", "alt" : "Icone Javascript" },
+        { "name": "TypeScript", "icon": "/icons/typescript.svg", "alt" : "Icone Typescript" }
     ],
     "frameworks": [
-        { "name": "React", "icon": "/icons/react.svg" },
-        { "name": "Redux", "icon": "/icons/redux.svg" },
-        { "name": "TailwindCSS", "icon": "/icons/tailwind.svg" },
-        { "name": "Bootstrap", "icon": "/icons/bootstrap.svg" }
+        { "name": "React", "icon": "/icons/react.svg", "alt" : "Icone ReactJS" },
+        { "name": "Redux", "icon": "/icons/redux.svg", "alt" : "Icone ReactRedux" },
+        { "name": "TailwindCSS", "icon": "/icons/tailwind.svg", "alt" : "Icone TailwindCSS" },
+        { "name": "Bootstrap", "icon": "/icons/bootstrap.svg", "alt" : "Icone Bootstrap" }
     ],
     "outils": [
-        { "name": "Github", "icon": "/icons/git.svg" },
-        { "name": "Figma", "icon": "/icons/figma.svg" },
-        { "name": "VS Code", "icon": "/icons/vscode.svg" },
-        { "name": "Vite", "icon": "/icons/vite.svg" }
+        { "name": "Github", "icon": "/icons/git.svg", "alt" : "Icone GitHub" },
+        { "name": "Figma", "icon": "/icons/figma.svg", "alt" : "Icone Figma" },
+        { "name": "VS Code", "icon": "/icons/vscode.svg", "alt" : "Icone Visual Studio Code" },
+        { "name": "Vite", "icon": "/icons/vite.svg", "alt" : "Icone Vite" }
     ]
 }

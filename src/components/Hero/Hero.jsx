@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import "./_hero.scss"
 
@@ -31,26 +31,19 @@ const Hero = () => {
     }, [])
 
     return (
-        <>
-            <div className="hero">
-                <div className="hero-greeting">
-                    <h1 className={isFadingOut ? "fade-out" : "fade-in"}>{greetings[currentGreeting]}</h1>
-                    <h2>
-                        Je m'appelle Raphaël Madeira,
-                        <br />
-                        et je suis 
-                        <div className="animated-text" style={{ color: textColor }}> 
-                            développeur web
-                        </div>
-                    </h2>
-                </div>
+        <div className="hero">
+            <div className="hero-greeting">
+                <h1 className={isFadingOut ? "fade-out" : "fade-in"}>{greetings[currentGreeting]}</h1>
+                <h2>
+                    Je m'appelle Raphaël Madeira,
+                    <br />
+                    et je suis 
+                    <div className="animated-text" style={{ color: textColor }}> 
+                        développeur web
+                    </div>
+                </h2>
             </div>
-            <div className="hero-scroll">
-                <Link to="/about">
-                    <i className="icofont-rounded-down"></i>
-                </Link>
-            </div>
-        </>
+        </div>
     )
 }
 

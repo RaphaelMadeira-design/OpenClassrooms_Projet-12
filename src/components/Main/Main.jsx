@@ -1,11 +1,10 @@
-import React from "react"
 import "./_main.scss"
 
 const Main = ({ children }) => {
     return (
-        <div className="main">
+        <main className="main">
             {children}
-        </div>
+        </main>
     )
 }
 

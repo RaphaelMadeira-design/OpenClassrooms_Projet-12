@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef } from "react"
 import { NavLink, useLocation } from "react-router-dom"
 import { gsap } from "gsap"
 import "./_navbar.scss"
@@ -78,30 +78,30 @@ function MobileNavbar() {
     }, [menuOpen])
 
     return (
-        <div className="navbar">
+        <nav className="navbar">
             <div className={`navbar-hamburger ${menuOpen ? "open" : ""}`} onClick={() => setMenuOpen(!menuOpen)}>
                 <div className="navbar-hamburger--icon"></div>
                 <div className="navbar-hamburger--icon"></div>
                 <div className="navbar-hamburger--icon"></div>
             </div>
-            <div className={`navbar-logo ${menuOpen ? "hidden" : ""}`}>
-            <i className="icofont-love"></i> Raphaël Madeira
-            </div>
+            <h1 className={`navbar-logo ${menuOpen ? "hidden" : ""}`}>
+                <i className="icofont-love"></i> Raphaël Madeira
+            </h1>
             <div className={`navbar-menu mobile ${menuOpen ? "open" : ""}`}>
                 <div className="navbar-menu--pill" ref={pillRef}></div>
-                <NavLink className="navbar-menu--item" to="/" onClick={() => setMenuOpen(false)}>
+                <NavLink className="navbar-menu--item" to="/" aria-label="accueil" onClick={() => setMenuOpen(false)}>
                     Accueil
                 </NavLink>
-                <NavLink className="navbar-menu--item" to="/about" onClick={() => setMenuOpen(false)}>
+                <NavLink className="navbar-menu--item" to="/about" aria-label="à propos" onClick={() => setMenuOpen(false)}>
                     À propos
                 </NavLink>
-                <NavLink className="navbar-menu--item" to="/skills" onClick={() => setMenuOpen(false)}>
+                <NavLink className="navbar-menu--item" to="/skills" aria-label="compétences" onClick={() => setMenuOpen(false)}>
                     Skills
                 </NavLink>
-                <NavLink className="navbar-menu--item" to="/portfolio" onClick={() => setMenuOpen(false)}>
+                <NavLink className="navbar-menu--item" to="/portfolio" aria-label="portfolio" onClick={() => setMenuOpen(false)}>
                     Portfolio
                 </NavLink>
-                <NavLink className="navbar-menu--item" to="/contact" onClick={() => setMenuOpen(false)}>
+                <NavLink className="navbar-menu--item" to="/contact" aria-label="contact" onClick={() => setMenuOpen(false)}>
                     Contact
                 </NavLink>
             </div>
@@ -113,7 +113,7 @@ function MobileNavbar() {
                     </filter>
                 </defs>
             </svg>
-        </div>
+        </nav>
     )
 }
 

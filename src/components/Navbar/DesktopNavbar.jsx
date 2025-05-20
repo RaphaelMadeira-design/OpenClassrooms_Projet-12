@@ -66,26 +66,26 @@ function DesktopNavbar() {
     }, [location.pathname])
 
     return (
-        <div className="navbar">
+        <nav className="navbar">
             <div className="navbar-menu">
                 <div className="navbar-menu--pill" ref={pillRef}></div>
-                <NavLink className="navbar-menu--item" to="/">
+                <NavLink className="navbar-menu--item" to="/" aria-label="accueil">
                     Accueil
                 </NavLink>
-                <NavLink className="navbar-menu--item" to="/about">
+                <NavLink className="navbar-menu--item" to="/about" aria-label="à propos">
                     À propos
                 </NavLink>
-                <NavLink className="navbar-menu--item" to="/skills">
+                <NavLink className="navbar-menu--item" to="/skills" aria-label="compétences">
                     Skills
                 </NavLink>
-                <NavLink className="navbar-menu--item" to="/portfolio">
+                <NavLink className="navbar-menu--item" to="/portfolio" aria-label="portfolio">
                     Portfolio
                 </NavLink>
-                <NavLink className="navbar-menu--item" to="/contact">
+                <NavLink className="navbar-menu--item" to="/contact" aria-label="contact">
                     Contact
                 </NavLink>
             </div>
-            <div className="navbar-logo"><i className="icofont-love"></i> Raphaël Madeira</div>
+            <h1 className="navbar-logo"><i className="icofont-love"></i> Raphaël Madeira</h1>
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                 <defs>
                     <filter id="goo">
@@ -94,7 +94,7 @@ function DesktopNavbar() {
                     </filter>
                 </defs>
             </svg>
-        </div>
+        </nav>
     )
 }
 

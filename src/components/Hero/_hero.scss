@@ -43,20 +43,6 @@
             }
         }
     }
-    &-scroll {
-        position: relative;
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 60px;
-        color: #fff;
-        transition: all 400ms ease-in-out;
-        &:hover {
-            animation: bounce 500ms alternate infinite;
-            color: #b54343;
-        }
-    }
 }
 
 @media screen and (max-width: 1366px) {
