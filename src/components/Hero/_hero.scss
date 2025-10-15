@@ -43,16 +43,6 @@
             }
         }
     }
-    &-picture {
-        width: 100%;
-        height: auto;
-        max-height: 600px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        display: block;
-        overflow: hidden;
-    }
 }
 
 @media screen and (max-width: 1366px) {
