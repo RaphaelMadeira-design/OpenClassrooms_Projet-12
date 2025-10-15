@@ -9,7 +9,7 @@ function CardList() {
                     key={index}
                     title={project.title}
                     image={project.image}
-                    color="#3882ba"
+                    color={project.color}
                     href={project.href || null}
                 />
             ))}
