@@ -42,23 +42,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Raphaël Madeira - Portfolio</title>
     </head>
-    <svg width="0" height="0" style="position:absolute">
-        <defs>
-            <filter id="goo" filterUnits="userSpaceOnUse">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-            <feColorMatrix
-                in="blur"
-                mode="matrix"
-                values="1 0 0 0 0  
-                        0 1 0 0 0  
-                        0 0 1 0 0  
-                        0 0 0 18 -7"
-                result="goo"
-            />
-            </filter>
-        </defs>
-    </svg>
     <body>
+        <svg width="0" height="0" style="position:absolute">
+            <defs>
+                <filter id="goo" filterUnits="userSpaceOnUse">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix
+                        in="blur"
+                        mode="matrix"
+                        values="1 0 0 0 0  
+                                0 1 0 0 0  
+                                0 0 1 0 0  
+                                0 0 0 18 -7"
+                        result="goo"
+                    />
+                </filter>
+            </defs>
+        </svg>
         <div id="root"></div>
         <script type="module" src="/src/main.jsx"></script>
     </body>
